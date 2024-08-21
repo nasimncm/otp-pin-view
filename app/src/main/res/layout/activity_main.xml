@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login_img" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Enter the 6-digit code we sent to "
+        android:textColor="#313131"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView2" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/mobileNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="+919899830751"
+        android:textColor="#A4A4A4"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/head" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/pinDigit1"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/pin_background"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/mobileNo"
+        app:layout_constraintEnd_toStartOf="@+id/pinDigit2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="567dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/pinDigit2"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/pin_background"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="@+id/pinDigit1"
+        app:layout_constraintEnd_toStartOf="@+id/pinDigit3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pinDigit1"
+        tools:layout_editor_absoluteY="567dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/pinDigit3"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/pin_background"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="@+id/pinDigit1"
+        app:layout_constraintEnd_toStartOf="@+id/pinDigit4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pinDigit2"
+        tools:layout_editor_absoluteY="567dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/pinDigit4"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/pin_background"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="@+id/pinDigit1"
+        app:layout_constraintEnd_toStartOf="@+id/pinDigit5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pinDigit3"
+        tools:layout_editor_absoluteY="567dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/pinDigit5"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/pin_background"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="@+id/pinDigit1"
+        app:layout_constraintEnd_toStartOf="@+id/pinDigit6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pinDigit4"
+        tools:layout_editor_absoluteY="567dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/pinDigit6"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/pin_background"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="@+id/pinDigit1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pinDigit5"
+        tools:layout_editor_absoluteY="567dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnVerify"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="#FEE300"
+        android:text="VERIFY"
+        android:textColor="@color/black"
+        app:cornerRadius="5dp"
+        app:layout_constraintCircleRadius="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pinDigit1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Resend code in 0:59"
+        android:textAlignment="center"
+        android:textColor="#999999"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/btnVerify"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
